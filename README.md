@@ -4,24 +4,6 @@
 ![License](https://img.shields.io/github/license/yourusername/rag-pipeline)
 ![Docker Image Size](https://img.shields.io/docker/image-size/yourusername/rag-pipeline/latest)
 
-## Table of Contents
-
-- [📖 Introduction](#-introduction)
-- [🚀 Features](#-features)
-- [🔧 Installation](#-installation)
-  - [Prerequisites](#prerequisites)
-  - [Clone the Repository](#clone-the-repository)
-  - [Build the Docker Image](#build-the-docker-image)
-- [🐳 Usage](#-usage)
-  - [Running the Container](#running-the-container)
-  - [Using Volume Mounts](#using-volume-mounts)
-- [🛠️ Development](#️-development)
-  - [Running Locally](#running-locally)
-  - [Testing](#testing)
-- [🤝 Contributing](#-contributing)
-- [📄 License](#-license)
-- [📫 Contact](#-contact)
-- [🙏 Acknowledgements](#-acknowledgements)
 
 ## 📖 Introduction
 
@@ -31,9 +13,7 @@ The **Dockerized RAG Pipeline** is a **Retrieve and Generate (RAG)** pipeline de
 
 - **Document Processing:** Efficiently process and store documents in `.docx` format.
 - **Embedding Storage:** Utilize ChromaDB for scalable and fast embedding storage.
-- **API Interface:** Interact with the pipeline through a FastAPI-powered API.
 - **Dockerized Setup:** Simplify deployment with Docker, ensuring consistency across environments.
-- **Scalable Architecture:** Designed to handle large volumes of documents and queries.
 
 ## 🔧 Installation
 
@@ -49,3 +29,12 @@ Ensure you have the following installed on your system:
 ```bash
 git clone https://github.com/yourusername/rag-pipeline.git
 cd rag-pipeline
+
+## Build the Docker Image
+docker build -t mini-rag-pipeline:latest .
+
+## Run the Docker Container
+docker run --name rag-container mini-rag-pipeline:latest
+
+- **To Process another docx file, please upload your file as sample.docx in the root directory of the project.
+- **To modify the query, please update the query in the test.py file.
