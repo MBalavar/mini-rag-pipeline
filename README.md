@@ -11,10 +11,10 @@ The Dockerized RAG Pipeline is a Retrieve and Generate (RAG) pipeline designed f
 
 ## 🚀 Features
 
-- Document Processing:** Efficiently process and store documents in `.docx` format.
-- Embedding Storage:** Utilise ChromaDB for scalable and fast embedding storage.
-- Dockerized Setup:** Simplify deployment with Docker, ensuring consistency across environments.
-- Leveraging "t5-small" model for synthesising the final response.
+- Document Processing: Efficiently process and store documents in `.docx` format.
+- Embedding Storage: Utilise ChromaDB for scalable and fast embedding storage.
+- Dockerized Setup: Simplify deployment with Docker, ensuring consistency across environments.
+- Generator Model: Leveraging "t5-small" model for synthesising the final response.
 
 ## 🔧 Installation
 
