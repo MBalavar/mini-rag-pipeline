@@ -7,13 +7,14 @@
 
 ## 📖 Introduction
 
-The **Dockerized RAG Pipeline** is a **Retrieve and Generate (RAG)** pipeline designed for efficient document processing and query handling. This pipeline leverages **ChromaDB** for embedding storage and retrieval, and **FastAPI** for providing a robust API interface. Dockerization ensures consistent environments across development and production, simplifying deployment and scaling.
+The Dockerized RAG Pipeline is a Retrieve and Generate (RAG) pipeline designed for efficient document processing and query handling. This pipeline leverages ChromaDB for embedding storage and retrieval and uses the “t5-small” model to synthesise the final response as the generator. Dockerization ensures consistent environments across development and production, simplifying deployment and scaling.
 
 ## 🚀 Features
 
-- **Document Processing:** Efficiently process and store documents in `.docx` format.
-- **Embedding Storage:** Utilize ChromaDB for scalable and fast embedding storage.
-- **Dockerized Setup:** Simplify deployment with Docker, ensuring consistency across environments.
+- Document Processing:** Efficiently process and store documents in `.docx` format.
+- Embedding Storage:** Utilise ChromaDB for scalable and fast embedding storage.
+- Dockerized Setup:** Simplify deployment with Docker, ensuring consistency across environments.
+- Leveraging "t5-small" model for synthesising the final response.
 
 ## 🔧 Installation
 
@@ -23,6 +24,10 @@ Ensure you have the following installed on your system:
 
 - [Docker](https://docs.docker.com/get-docker/) (version 20.10.0 or higher)
 - [Git](https://git-scm.com/downloads)
+
+To Process another .docx file, please upload your file as sample.docx in the root directory of the project.
+
+To modify the query, please update the query in the test.py file.
 
 ### Clone the Repository
 
@@ -36,5 +41,4 @@ docker build -t mini-rag-pipeline:latest .
 ## Run the Docker Container
 docker run --name rag-container mini-rag-pipeline:latest
 
-- **To Process another docx file, please upload your file as sample.docx in the root directory of the project.
-- **To modify the query, please update the query in the test.py file.
+
