@@ -1,9 +1,5 @@
 # Dockerized RAG Pipeline
 
-![Build Status](https://img.shields.io/github/actions/workflow/status/yourusername/rag-pipeline/build.yml?branch=main)
-![License](https://img.shields.io/github/license/yourusername/rag-pipeline)
-![Docker Image Size](https://img.shields.io/docker/image-size/yourusername/rag-pipeline/latest)
-
 
 ## 📖 Introduction
 
